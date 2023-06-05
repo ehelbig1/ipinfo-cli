@@ -1,0 +1,5 @@
+[commit]
+    template = .gitmessage
+
+[core]
+    hooksPath = hooks

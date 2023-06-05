@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cargo clippy
+cargo outdated
+cargo audit
+cargo fmt
+
+git add .
