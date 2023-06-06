@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "template-cli",
-    "template-api"
+    "ipinfo-cli",
+    "ipinfo-api"
 ]

@@ -437,6 +437,32 @@ dependencies = [
 ]
 
 [[package]]
+name = "ipinfo-api"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "thiserror",
+]
+
+[[package]]
+name = "ipinfo-cli"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "async-trait",
+ "console",
+ "env_logger",
+ "ipinfo-api",
+ "log",
+ "reqwest",
+ "structopt",
+ "tokio",
+]
+
+[[package]]
 name = "ipnet"
 version = "2.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -963,32 +989,6 @@ dependencies = [
  "redox_syscall 0.3.5",
  "rustix",
  "windows-sys 0.45.0",
-]
-
-[[package]]
-name = "template-api"
-version = "0.1.0"
-dependencies = [
- "async-trait",
- "reqwest",
- "serde",
- "serde_json",
- "thiserror",
-]
-
-[[package]]
-name = "template-cli"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "async-trait",
- "console",
- "env_logger",
- "log",
- "reqwest",
- "structopt",
- "template-api",
- "tokio",
 ]
 
 [[package]]

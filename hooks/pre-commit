@@ -1,8 +1,15 @@
 #!/bin/bash
 
-cargo clippy
-cargo outdated
+set -e
+
+cargo clippy -- \
+    -D clippy::single-component-path-imports \
+    -D clippy::useless_format
+
+cargo outdated -w --exit-code 1
+
 cargo audit
+
 cargo fmt
 
 git add .
