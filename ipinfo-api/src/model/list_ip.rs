@@ -4,7 +4,7 @@ use std::net;
 #[derive(Debug, Deserialize)]
 pub struct Response {
     pub ip: net::IpAddr,
-    pub hostname: String,
+    pub hostname: Option<String>,
     pub city: String,
     pub region: String,
     pub country: String,
